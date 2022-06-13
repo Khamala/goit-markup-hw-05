@@ -68,6 +68,10 @@
 
     padding-top: 24px;
     padding-bottom: 24px;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-accent {
@@ -78,6 +82,8 @@
 .header-nav-logo:focus {
     color: var(--accent-color);
 }
+
+
 
     /*Navigate*/
 
@@ -103,6 +109,13 @@
 
     display: flex;
     margin-left: 93px;
+
+    
+}
+.header-nav-list .link {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-list-item:not(:last-child) {
@@ -143,6 +156,10 @@
 
 .header-kontakts-list .link {
     color: var(--primary-text-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-kontakts-list {
@@ -219,6 +236,10 @@
     padding-bottom: 6px;
     padding-left: 22px;
     padding-right: 22px;
+
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button.secondary:hover,
@@ -241,6 +262,14 @@
     padding-bottom: 6px;
     padding-left: 22px;
     padding-right: 22px;
+
+    
+}
+
+.button.button-activ {
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button.button-activ:hover,
@@ -310,6 +339,10 @@
     letter-spacing: 0.06em;
 
     display: inline-block;
+
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-hero-button:hover,
@@ -428,20 +461,15 @@
 }
 
 
-
-
  .services-position {
 
     position: relative;
-
-
 }
 
 
 .services-list-text-position {
 
     position: absolute;
-
     bottom: 0;
 
     background: rgba(47, 48, 58, 0.8);
@@ -453,12 +481,7 @@
 }
 
 
-
-
-
 .services-list-text {
-   
-
     font-weight: 700;
     font-size: 14px;
     line-height: 1,14;
@@ -468,11 +491,6 @@
 
     color: var(--primary-button-color);
 }
-
-
-
-
-
 
 
         /*SECTION TEAM*/
@@ -544,7 +562,6 @@
 }
 
 
-
 /*Список ссылок на соцсети*/
 
 .team-list-icons {
@@ -564,6 +581,10 @@
 
     border-radius: 50%;
     background-color: var(--primary-bg-color);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link-icons:not(:last-child) {
@@ -577,7 +598,6 @@
 
 .team-link-icons:hover,
 .team-link-icons:focus {
-    
     background-color: var(--accent-color);
     
 }
@@ -587,11 +607,13 @@
     fill: var(--primary-button-color);
 }
 
-
+.team-link-icons .icon {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
  
-
-
 
         /*CLIENTS*/
 
@@ -635,6 +657,10 @@
     margin-right: 30px;
 
     color: var(--color-icon-primary);
+
+    transition-property: border, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-clients-not-margin {
@@ -647,13 +673,7 @@
     color: var(--accent-color);
 }
 
-
-  
-  
-
-
-
-/*Footer*/
+        /*Footer*/
 
 .footer {
     background-color: var(--primary-dark-bg-color);
@@ -677,6 +697,10 @@
 
     display: inline-block;
     margin-bottom: 20px;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-accent {
@@ -694,6 +718,13 @@
 .footer-address-list .link:focus {
     color: var(--accent-color);
 }
+
+.footer-address-list .link {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 
 .footer-address-text {
     color: var(--primary-button-color);
@@ -720,39 +751,27 @@
     margin-bottom: 9px;
 }
 
-
 .footer-icons-social {
     fill: var(--primary-button-color);
 }
 
-
-
 .footer-address {
     margin-right: 70px;
 }
-
-
 
 .footer-text {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-
     text-transform: uppercase;
-
     color: var(--primary-button-color);
-
     margin-bottom: 20px;
-
 }
 
 .list-icons {
     display: flex;
-    
     align-items: center;
-
-
 }
 
 .footer-icons-flex-element:not(:last-child) {
@@ -764,25 +783,21 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-
     width: 44px;
     height: 44px;
-
     color: var(--primary-button-color);
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-
-    cursor: pointer;
-
+    
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-social:hover,
 .link-social:focus {
     background-color:var(--accent-color);
 }
-
-
-
 
 
     /*PORTFOLIO*/
@@ -858,11 +873,14 @@
 
 .projects-shadow {
     display: block;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-shadow:hover,
 .projects-shadow:focus {
-
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -872,24 +890,19 @@
 
 .projects-blok-overlay {
     position: relative;
-
     width: 370px;
     height: 294px;
-
     overflow: hidden;
 }
 
 .projects-overlay {
-
     position: absolute;
-    
     top: 0;
-    
     margin: 0;
     padding-top: 63px;
     padding-bottom: 63px;
     padding-left: 24px;
-    padding: 24px;
+    padding-right: 24px;
 
     height: 100%;
 
@@ -910,15 +923,12 @@
     transform: translate(0);
 }
 
-
 .projects-hover:focus .projects-overlay {
     transform: translate(0);
 }
 
  
     
-
-
         /* MODAL WINDOW */
 
 
@@ -977,16 +987,3 @@
 
     cursor: pointer;
 }
-
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-Порядок записи свойств
-
-Позиция всегда сначала
-Потом геометрия
-Потом все остальное
-
-
-Появление и скрытие модального окна анимировано при помощи перехода с произвольным эффектом,
-например scale или translate,
-и opacity.
